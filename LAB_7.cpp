@@ -10,11 +10,11 @@ int main()
 	cin >> x;
 	cout << endl;
 	int y1, y2;
-	if (abs(x) < 1) {
+	if (abs(x) <= 1) {
 		y1 = 1;
 	}
 	else {
-		if (abs(x) < 2) {
+		if (abs(x) <= 2) {
 			y1 = -1;
 		}
 		else {
@@ -25,13 +25,13 @@ int main()
 	cout << "Y1 = " << y1 << endl;
 	cout << endl;
 
-	if (abs(x) < 1) {
+	if (abs(x) <= 1) {
 		y2 = 1;
 	}
-	if (abs(x) >= 1 and abs(x) < 2) {
+	if (abs(x) > 1 and abs(x) <= 2) {
 		y2 = -1;
 	}
-	if (abs(x) >= 2) {
+	if (abs(x) > 2) {
 		y2 = 0;
 	}
 	cout << "Программа 2:" << endl;
