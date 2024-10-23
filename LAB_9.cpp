@@ -24,6 +24,13 @@ int main()
 		float dx1 = x + dx / 2, dx2 = x - dx / 2;
 		float dy1_up = cos(dx1) * log(2 + pow(sin(dx1), 2)) - (2 * pow(sin(dx1), 2) * cos(dx1)) / (2 + pow(sin(dx1), 2));
 		float dy1_down = pow(log(2 + pow(sin(dx1), 2)), 2);
+		float dy1 = dy1_up / dy1_down;
+		float dy2_up = cos(dx2) * log(2 + pow(sin(dx2), 2)) - (2 * pow(sin(dx2), 2) * cos(dx2)) / (2 + pow(sin(dx2), 2));
+		float dy2_down = pow(log(2 + pow(sin(dx2), 2)), 2);
+		float dy2 = dy2_up / dy2_down;
+		float dy = dy1 - dy2;
+		float derivative = dy / dx;
+		float abs_diff = abs(derivative - y2);
 	}
 
 }
