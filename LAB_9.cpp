@@ -21,7 +21,9 @@ int main()
 	// Вычисление в цикле
 	for (float dx = 0.0005; dx <= 0.016; dx = dx * 2)
 	{
-
+		float dx1 = x + dx / 2, dx2 = x - dx / 2;
+		float dy1_up = cos(dx1) * log(2 + pow(sin(dx1), 2)) - (2 * pow(sin(dx1), 2) * cos(dx1)) / (2 + pow(sin(dx1), 2));
+		float dy1_down = pow(log(2 + pow(sin(dx1), 2)), 2);
 	}
 
 }
