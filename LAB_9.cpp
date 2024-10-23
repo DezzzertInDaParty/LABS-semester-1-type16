@@ -15,5 +15,9 @@ int main()
 	y1 = (p * q - (2 * p - 2 * pow(p, 3)) / (3 - pow(p, 2))) / pow(q, 2);
 	// Вычисление 2
 	float up, down;
+	up = cos(x) * log(2 + pow(sin(x), 2)) - (2 * pow(sin(x), 2) * cos(x)) / (2 + pow(sin(x), 2));
+	down = pow(log(2 + pow(sin(x), 2)), 2);
+	y2 = up / down;
+	// Вычисление в цикле
 
 }
