@@ -19,6 +19,7 @@ int main()
 	down = pow(log(2 + pow(sin(x), 2)), 2);
 	y2 = up / down;
 	// Вычисление в цикле
+	cout << "dX" << "        " << "dY/dX" << "        " << "|(dY/dX)-Y'|" << endl;
 	for (float dx = 0.0005; dx <= 0.016; dx = dx * 2)
 	{
 		float dx1 = x + dx / 2, dx2 = x - dx / 2;
@@ -31,6 +32,7 @@ int main()
 		float dy = dy1 - dy2;
 		float derivative = dy / dx;
 		float abs_diff = abs(derivative - y2);
+		cout << dx << "     " << derivative << "     " << abs_diff << endl;
 	}
 
 }
