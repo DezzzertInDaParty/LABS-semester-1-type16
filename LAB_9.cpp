@@ -19,5 +19,9 @@ int main()
 	down = pow(log(2 + pow(sin(x), 2)), 2);
 	y2 = up / down;
 	// Вычисление в цикле
+	for (float dx = 0.0005; dx <= 0.016; dx = dx * 2)
+	{
+
+	}
 
 }
