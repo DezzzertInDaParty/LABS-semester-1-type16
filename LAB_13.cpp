@@ -108,8 +108,8 @@ int main()
 	float num2 = m2 * n2;
 	mid2_g = pow(mid2_g, (1 / num2));
 	mid2_a = mid2_a / num2;
-	cout << "Среднее геометрическое для динамического массива: " << mid2_g << endl;
-	cout << "Среднее арифметическое для динамического массива: " << mid2_a << endl;
+	cout << "Среднее геометрическое для динамического массива (g): " << mid2_g << endl;
+	cout << "Среднее арифметическое для динамического массива (a): " << mid2_a << endl;
 	cout << "\n";
 	int arr_size2 = 0;
 	for (unsigned i = 0; i < m2; i++) // Счет количества элементов между с.г. и с.а.
@@ -150,5 +150,9 @@ int main()
 	for (unsigned i = 0; i < arr_size2; i++)
 		cout << elements2[i] << "\t";
 	cout << "\n\n";
+	delete[] elements1;
+	delete[] D2;
+	delete[]  elements2;
+
 	return 0;
 }
